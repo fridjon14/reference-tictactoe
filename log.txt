@@ -1,0 +1,26 @@
+Attaching to referencetictactoe_postgres_1, referencetictactoe_server_1
+[36mpostgres_1  |[0m LOG:  database system was shut down at 2016-12-06 15:09:45 UTC
+[36mpostgres_1  |[0m LOG:  MultiXact member wraparound protections are now enabled
+[36mpostgres_1  |[0m LOG:  autovacuum launcher started
+[36mpostgres_1  |[0m LOG:  database system is ready to accept connections
+[33mserver_1    |[0m npm info it worked if it ends with ok
+[33mserver_1    |[0m npm info using npm@3.10.9
+[33mserver_1    |[0m npm info using node@v7.2.0
+[33mserver_1    |[0m npm info lifecycle an-outlandish-mean-app@1.0.0~premigratedb: an-outlandish-mean-app@1.0.0
+[33mserver_1    |[0m npm info lifecycle an-outlandish-mean-app@1.0.0~migratedb: an-outlandish-mean-app@1.0.0
+[33mserver_1    |[0m 
+[33mserver_1    |[0m > an-outlandish-mean-app@1.0.0 migratedb /Workdir
+[33mserver_1    |[0m > db-migrate --config ./server/database.json --migrations-dir ./server/migrations up -e production
+[33mserver_1    |[0m 
+[33mserver_1    |[0m (node:19) DeprecationWarning: Using Buffer without `new` will soon stop working. Use `new Buffer()`, or preferably `Buffer.from()`, `Buffer.allocUnsafe()` or `Buffer.alloc()` instead.
+[33mserver_1    |[0m [INFO] No migrations to run
+[33mserver_1    |[0m [INFO] Done
+[33mserver_1    |[0m npm info lifecycle an-outlandish-mean-app@1.0.0~postmigratedb: an-outlandish-mean-app@1.0.0
+[33mserver_1    |[0m npm info ok 
+[33mserver_1    |[0m Warning: connect.session() MemoryStore is not
+[33mserver_1    |[0m designed for a production environment, as it will leak
+[33mserver_1    |[0m memory, and will not scale past a single process.
+[33mserver_1    |[0m (node:29) DeprecationWarning: Using Buffer without `new` will soon stop working. Use `new Buffer()`, or preferably `Buffer.from()`, `Buffer.allocUnsafe()` or `Buffer.alloc()` instead.
+[33mserver_1    |[0m Server listening on port 3000
+[33mserver_1    |[0m Command log count: 0
+[33mserver_1    |[0m Event log count: 0
