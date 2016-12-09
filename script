@@ -15,7 +15,6 @@ echo "2!!!!!!!!!!!"
 
 npm install --silent
 cd client
-
 npm install --silent
 cd ..
 
@@ -61,16 +60,15 @@ cd build
 echo Building docker image
 
 #Builds the docker image.
-sudo docker build -t fridjon14/tictactoe:$GIT_COMMIT .
-jenkins ALL=(ALL) NOPASSWD: ALL
+docker build -t fridjon14/tictactoe:$GIT_COMMIT .
+
 rc=$?
 if [[ $rc != 0 ]] ; then
     echo "Docker build failed " $rc
     exit $rc
 fi
 #Upload the docker file.
-sudo docker push fridjon14/tictactoe:$GIT_COMMIT
-jenkins ALL=(ALL) NOPASSWD: ALL
+docker push fridjon14/tictactoe:$GIT_COMMIT
 rc=$?
 if [[ $rc != 0 ]] ; then
     echo "Docker push failed " $rc
