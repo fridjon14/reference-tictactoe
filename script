@@ -67,6 +67,7 @@ if [[ $rc != 0 ]] ; then
     echo "Docker build failed " $rc
     exit $rc
 fi
+docker login --fridjon14  --password fiddi1985
 #Upload the docker file.
 docker push fridjon14/tictactoe:$GIT_COMMIT
 rc=$?
