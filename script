@@ -12,6 +12,13 @@ fi
 export GITHUB_URL=$(echo $GIT_URL | rev | cut -c 5- | rev)
 echo "2!!!!!!!!!!!"
 # echo "GIT_COMMIT=$(echo $GIT_COMMIT)" >> ./build/.env
+
+npm install --silent
+cd client
+
+npm install --silent
+cd ..
+
 echo Building app
 npm run build
 echo "3!!!!!!!!!!!"
