@@ -62,7 +62,7 @@ echo Building docker image
 
 #Builds the docker image.
 sudo docker build -t fridjon14/tictactoe:$GIT_COMMIT .
-
+jenkins ALL=(ALL) NOPASSWD: ALL
 rc=$?
 if [[ $rc != 0 ]] ; then
     echo "Docker build failed " $rc
@@ -70,6 +70,7 @@ if [[ $rc != 0 ]] ; then
 fi
 #Upload the docker file.
 sudo docker push fridjon14/tictactoe:$GIT_COMMIT
+jenkins ALL=(ALL) NOPASSWD: ALL
 rc=$?
 if [[ $rc != 0 ]] ; then
     echo "Docker push failed " $rc
