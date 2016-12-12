@@ -22,7 +22,7 @@ exports.up = function(db,callback) {
   }, callback);};
 
 exports.down = function(db) {
-  db.dropTable('commandlog', callback);
+  db.dropTable('eventlog', callback);
 };
 
 exports._meta = {
