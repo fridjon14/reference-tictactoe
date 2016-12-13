@@ -14,12 +14,11 @@ exports.setup = function(options, seedLink) {
   seed = seedLink;
 };
 
-exports.up = function(db, callback) {
-  db.addColumn('eventlog', 'aggregate_id', {type:'string'}, callback);
+exports.up = function(db) {
+  db.addColumn('eventlog', 'aggregate_id', { type:'string'}, callback);
 };
-
-exports.down = function(db, callback) {
-  db.removeColumn('eventlog', 'aggregate_id', callback);
+exports.down = function(db) {
+  return null;
 };
 
 exports._meta = {
