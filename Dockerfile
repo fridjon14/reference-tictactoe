@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR /Workdir
+WORKDIR /tictactoe
 
 COPY package.json .
 COPY . .
