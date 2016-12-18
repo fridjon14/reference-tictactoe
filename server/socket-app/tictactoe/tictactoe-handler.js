@@ -21,7 +21,10 @@ module.exports = function(injected){
                         }]);
 
                     },
+
+
                     "JoinGame": function (cmd) {
+                      console.log(cmd);
                         if(gameState.gameFull()){
                             eventHandler( [{
                                 gameId: cmd.gameId,
@@ -61,4 +64,3 @@ module.exports = function(injected){
         }
     }
 };
-
