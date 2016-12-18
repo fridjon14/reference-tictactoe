@@ -55,7 +55,7 @@ _EOF_
 cp ./Dockerfile ./build/
 cp package.json ./build/
 cp runnode.sh   ./build
-cp ./.env       ./build
+
 cp ./deploy.sh  ./build
 cp docker-compose.yml ./build
 cd build
