@@ -51,10 +51,12 @@ cat > ./build/public/version.html << _EOF_
 </body>
 _EOF_
 
-#Create the neccersary folder for the build, and copy files into it. 
+#Create the neccersary folder for the build, and copy files into it.
 cp ./Dockerfile ./build/
 cp package.json ./build/
-cp runnode.sh   ./build/
+cp runnode.sh   ./build
+cp ./.env       ./build
+cp ./deploy.sh  ./build
 cp docker-compose.yml ./build
 cd build
 echo Building docker image
